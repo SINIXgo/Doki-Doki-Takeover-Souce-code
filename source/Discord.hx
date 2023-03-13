@@ -6,7 +6,7 @@ import discord_rpc.DiscordRpc;
 
 using StringTools;
 
-class DiscordClient
+class 
 {
 	public function new()
 	{
