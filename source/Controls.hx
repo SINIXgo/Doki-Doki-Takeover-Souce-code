@@ -864,3 +864,12 @@ class Controls extends FlxActionSet
 		return input.device == GAMEPAD && (deviceID == FlxInputDeviceID.ALL || input.deviceID == deviceID);
 	}
 }
+#if mobile
+
+import mobile.flixel.FlxButton;
+
+import mobile.flixel.FlxHitbox;
+
+import mobile.flixel.FlxVirtualPad;
+
+#end
