@@ -133,3 +133,10 @@ class MusicBeatState extends FlxUIState
 		// do literally nothing dumbass
 	}
 }
+#if mobile
+import mobile.flixel.FlxHitbox;
+import mobile.flixel.FlxVirtualPad;
+import flixel.FlxCamera;
+import flixel.input.actions.FlxActionInput;
+import flixel.util.FlxDestroyUtil;
+#end
