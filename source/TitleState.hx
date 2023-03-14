@@ -205,7 +205,11 @@ class TitleState extends MusicBeatState
 		else
 			initialized = true;
 	}
+#if android
 
+FlxG.android.preventDefaultKeys = [BACK];
+
+#end
 	function getIntroTextShit():Array<Array<String>>
 	{
 		var fullText:String = Assets.getText(Paths.txt('data/introText'));
