@@ -52,7 +52,10 @@ class CloseGameSubState extends MusicBeatSubstate
 
 		changeItem();
 	}
-
+#if android
+                addVirtualPad(LEFT_RIGHT, A_B);
+                addPadCamera();
+                #end
 	override function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
